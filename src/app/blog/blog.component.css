@@ -1,0 +1,27 @@
+.grid-container{
+  margin: 10px auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+mat-card{
+  margin: 0;
+  padding: 0 0 30px;
+}
+
+.post-img {
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+mat-card-title, mat-card-content {
+  padding: 0 25px 10px;
+}
+
+a {
+  margin-left: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 20px;
+}

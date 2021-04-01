@@ -4,24 +4,20 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
-import { BlogComponent } from './blog/blog.component';
 import {MatButtonModule} from '@angular/material/button';
-import { TruncatePipe } from './blog/truncate.pipe';
-import { BlogItemComponent } from './blog/blog-item/blog-item.component';
+import { PostsModule } from "./posts/posts.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BlogComponent,
-    TruncatePipe,
-    BlogItemComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    PostsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

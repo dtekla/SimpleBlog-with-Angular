@@ -1,10 +1,10 @@
 import {Component} from '@angular/core';
 
-interface Post {
+export interface Post {
   id: number;
   title: string;
   body: string;
-  postImg: string
+  postImg: string;
 }
 
 @Component({

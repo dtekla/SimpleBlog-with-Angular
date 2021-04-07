@@ -5,6 +5,7 @@ import { TruncatePipe } from './post-item/truncate.pipe';
 import { PostsComponent } from './blog/posts.component';
 import { PostItemComponent } from './post-item/post-item.component';
 import {MatButtonModule} from "@angular/material/button";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import {MatButtonModule} from "@angular/material/button";
     CommonModule,
     MatCardModule,
     MatButtonModule,
-
+    HttpClientModule
   ]
 })
 export class PostsModule { }

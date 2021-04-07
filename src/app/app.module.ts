@@ -22,4 +22,6 @@ import { PostsModule } from "./posts/posts.module";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

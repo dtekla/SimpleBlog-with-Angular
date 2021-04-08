@@ -12,13 +12,19 @@ import { POST } from "../post.interface";
 export class PostsComponent implements OnInit {
 
   posts:POST[];
+  noPosts = false;
+
+  errorMessage = '';
 
   constructor(private postService: PostsService) { }
 
-  ngOnInit(): any {
+  ngOnInit(): void {
      this.postService.getPosts().subscribe(
       post => {this.posts = post;
-      }
+      },
+       error => {
+          this.errorMessage = error;
+       }
     );
   }
 

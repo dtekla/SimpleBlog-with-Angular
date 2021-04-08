@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
+import {HttpClient, HttpErrorResponse, HttpParams} from "@angular/common/http";
+import {Observable, throwError} from "rxjs";
 import {POST} from "./post.interface";
+import {catchError, retry} from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +13,26 @@ export class PostsService {
 
   constructor(private  http: HttpClient) { }
 
-  getPosts(): Observable<any> {
-    return  this.http.get(PostsService.API_URL);
+  getPosts(limit = 6): Observable<POST[]> {
+    // @ts-ignore
+    return  this.http.get<POST[]>(PostsService.API_URL, {
+      params: new HttpParams().set('_limit', limit.toString())
+    }).pipe(
+      retry(1),
+      catchError(this.handleError)
+    );
+  }
+
+  handleError(error: HttpErrorResponse): Observable<string> {
+    let errorMessage = '';
+
+    if(error.error instanceof ProgressEvent) {
+      errorMessage = `client-side error: ${error.message}`;
+    } else {
+      errorMessage = `Error status: ${error.status}`;
+    }
+
+    return throwError(errorMessage);
   }
 
   getPostId(id:number): Observable<any> {

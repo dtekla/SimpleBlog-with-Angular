@@ -1,0 +1,18 @@
+.error-text{
+  width: 50%;
+  margin: 20px auto;
+  background-color: lightcoral;
+  border: 1px solid indianred;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-text p span {
+  font-weight: bold;
+  display: block;
+  text-align: left;
+}

@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 
+
 export interface Post {
   id: number;
   title: string;

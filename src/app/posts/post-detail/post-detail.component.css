@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 mat-card{
   height: 10vh;
   background-color: rgba(42, 77, 52, 0.5);
@@ -8,6 +6,14 @@ mat-card{
 mat-card-title{
   position: absolute;
   left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.toAllPostsBtn{
+  position: absolute;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }

@@ -6,24 +6,35 @@ import { PostsComponent } from './blog/posts.component';
 import { PostItemComponent } from './post-item/post-item.component';
 import {MatButtonModule} from "@angular/material/button";
 import {HttpClientModule} from "@angular/common/http";
+import {AppRoutingModule} from "../app-routing.module";
+import {HeaderComponent} from "../header/header.component";
+import {RouterModule} from "@angular/router";
+
+
+
+
+
 
 
 @NgModule({
   declarations: [
     TruncatePipe,
     PostsComponent,
-    PostItemComponent
-
+    PostItemComponent,
+    HeaderComponent
   ],
   exports: [
     TruncatePipe,
-    PostsComponent
+    PostsComponent,
+    HeaderComponent,
   ],
   imports: [
     CommonModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    RouterModule,
   ]
 })
 export class PostsModule { }

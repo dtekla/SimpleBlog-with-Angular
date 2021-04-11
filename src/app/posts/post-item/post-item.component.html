@@ -1,5 +1,6 @@
 <img class="post-img" src="{{ post.postImg }}" alt="">
 <mat-card-title>{{post.title }}</mat-card-title>
 <mat-card-content>{{ post.body | truncate: 100 }}</mat-card-content>
-<a mat-button routerLink="post">learn more</a>
+<a  mat-button [routerLink]="['/post', post.id]">learn more</a>
+
 

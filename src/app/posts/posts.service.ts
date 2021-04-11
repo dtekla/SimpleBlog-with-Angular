@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpParams} from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
-import {POST} from "./post.interface";
+import {Post} from "./post.interface";
 import {catchError, retry} from "rxjs/operators";
 
 @Injectable({
@@ -13,9 +13,9 @@ export class PostsService {
 
   constructor(private  http: HttpClient) { }
 
-  getPosts(limit = 6): Observable<POST[]> {
+  getPosts(limit = 6): Observable<Post[]> {
     // @ts-ignore
-    return  this.http.get<POST[]>(PostsService.API_URL, {
+    return  this.http.get<Post[]>(PostsService.API_URL, {
       params: new HttpParams().set('_limit', limit.toString())
     }).pipe(
       retry(1),
@@ -27,15 +27,15 @@ export class PostsService {
     let errorMessage = '';
 
     if(error.error instanceof ProgressEvent) {
-      errorMessage = `client-side error: ${error.message}`;
+      errorMessage = `Error message: ${error.message}`;
     } else {
-      errorMessage = `Error status: ${error.status}`;
+      errorMessage = `Error message: ${error.message}`;
     }
 
     return throwError(errorMessage);
   }
 
   getPostId(id:number): Observable<any> {
-    return this.http.get<POST>(PostsService.API_URL +`/${id}`)
+    return this.http.get<Post>(PostsService.API_URL +`/${id}`)
   }
 }

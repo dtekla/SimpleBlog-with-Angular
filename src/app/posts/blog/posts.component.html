@@ -9,6 +9,6 @@
   <p><span>Oops! Error!</span> Something happened, try again later!</p>
 </mat-card>
 
-<mat-card class="noPosts-text" *ngIf="posts.length <= 1 && errorMessage === ''">
+<mat-card class="noPosts-text" *ngIf="posts.length === 0 && errorMessage === ''">
   <p><span>Oops!</span> No posts yet :(</p>
 </mat-card>

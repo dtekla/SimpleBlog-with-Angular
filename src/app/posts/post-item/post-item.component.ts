@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {POST} from "../post.interface";
+import {Post} from "../post.interface";
 
 @Component({
   selector: 'app-post-item',
@@ -9,7 +9,7 @@ import {POST} from "../post.interface";
 export class PostItemComponent implements OnInit {
 
   @Input()
-  post:POST;
+  post:Post;
 
   constructor() { }
 

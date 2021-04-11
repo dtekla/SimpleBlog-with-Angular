@@ -1,19 +1,48 @@
-mat-card{
-  height: 10vh;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+.detail-header{
+  height: 15vh;
   background-color: rgba(42, 77, 52, 0.5);
   position: relative;
 }
-mat-card-title{
+
+.detail-header mat-card-content{
   position: absolute;
   left: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
 
+.detail-header mat-card-title{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+  color: #F0F8FF;
+}
+
+.detail-header mat-card-subtitle{
+  color: #F0F8FF;
+  font-size: 12px;
+  font-style: italic;
+}
 
 .toAllPostsBtn{
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.post-details{
+  width: 70%;
+  margin: 20px auto;
+}
+
+.post-details mat-card-title {
+  padding: 20px;
+}
+
+.post-details mat-card-content {
+  padding: 0 20px 30px;
+  white-space: pre-line;
+  text-align: justify;
 }

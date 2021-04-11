@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {PostsService} from "../posts.service";
-import { POST } from "../post.interface";
-
+import { Post } from "../post.interface";
 
 
 @Component({
@@ -11,10 +10,11 @@ import { POST } from "../post.interface";
 })
 export class PostsComponent implements OnInit {
 
-  posts:POST[];
+  posts:Post[];
   noPosts = false;
 
   errorMessage = '';
+
 
   constructor(private postService: PostsService) { }
 

@@ -9,11 +9,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {AppRoutingModule} from "../app-routing.module";
 import {HeaderComponent} from "../header/header.component";
 import {RouterModule} from "@angular/router";
-
-
-
-
-
+import {PostsService} from "./posts.service";
 
 
 @NgModule({
@@ -21,7 +17,7 @@ import {RouterModule} from "@angular/router";
     TruncatePipe,
     PostsComponent,
     PostItemComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   exports: [
     TruncatePipe,
@@ -35,6 +31,9 @@ import {RouterModule} from "@angular/router";
     HttpClientModule,
     AppRoutingModule,
     RouterModule,
+  ],
+  providers: [
+    PostsService
   ]
 })
 export class PostsModule { }

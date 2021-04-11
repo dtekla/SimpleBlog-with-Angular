@@ -5,6 +5,7 @@
   </mat-card-content>
   <a mat-button class="toAllPostsBtn" routerLink="">all posts</a>
 </mat-card>
+<img src="{{post.postImg}}" alt="blog picture">
 <mat-card class="post-details">
   <mat-card-title>{{post.title | ucfirst}}</mat-card-title>
   <mat-card-content>{{ post.body }}</mat-card-content>

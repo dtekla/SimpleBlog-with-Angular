@@ -1,40 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
-.detail-header{
+.detail-header {
   height: 15vh;
   background-color: rgba(42, 77, 52, 0.5);
   position: relative;
 }
 
-.detail-header mat-card-content{
+.detail-header mat-card-content {
   position: absolute;
   left: 30px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.detail-header mat-card-title{
+.detail-header mat-card-title {
   font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
   color: #F0F8FF;
 }
 
-.detail-header mat-card-subtitle{
+.detail-header mat-card-subtitle {
   color: #F0F8FF;
   font-size: 12px;
   font-style: italic;
 }
 
-.toAllPostsBtn{
+.toAllPostsBtn {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.post-details{
+.post-details {
   width: 70%;
   margin: 20px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+
 }
 
 .post-details mat-card-title {
@@ -46,4 +51,11 @@
   padding: 0 20px 30px;
   white-space: pre-line;
   text-align: justify;
+}
+
+img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  position: relative;
 }

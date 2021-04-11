@@ -13,7 +13,7 @@ export class PostsService {
 
   constructor(private  http: HttpClient) { }
 
-  getPosts(limit = 6): Observable<Post[]> {
+  getPosts(limit = 7): Observable<Post[]> {
     // @ts-ignore
     return  this.http.get<Post[]>(PostsService.API_URL, {
       params: new HttpParams().set('_limit', limit.toString())

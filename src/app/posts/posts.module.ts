@@ -10,6 +10,7 @@ import {AppRoutingModule} from "../app-routing.module";
 import {HeaderComponent} from "../header/header.component";
 import {RouterModule} from "@angular/router";
 import {PostsService} from "./posts.service";
+import { UcfirstPipe } from './post-detail/ucfirst.pipe';
 
 
 @NgModule({
@@ -18,11 +19,13 @@ import {PostsService} from "./posts.service";
     PostsComponent,
     PostItemComponent,
     HeaderComponent,
+    UcfirstPipe,
   ],
   exports: [
     TruncatePipe,
     PostsComponent,
     HeaderComponent,
+    UcfirstPipe,
   ],
   imports: [
     CommonModule,

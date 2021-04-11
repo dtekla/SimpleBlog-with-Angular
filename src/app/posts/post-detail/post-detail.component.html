@@ -6,7 +6,7 @@
   <a mat-button class="toAllPostsBtn" routerLink="">all posts</a>
 </mat-card>
 <mat-card class="post-details">
-  <mat-card-title>{{post.title }}</mat-card-title>
+  <mat-card-title>{{post.title | ucfirst}}</mat-card-title>
   <mat-card-content>{{ post.body }}</mat-card-content>
 </mat-card>
 

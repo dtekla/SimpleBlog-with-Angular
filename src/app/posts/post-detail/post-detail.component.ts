@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Params} from "@angular/router";
 import {PostsService } from "../posts.service";
 import {Post} from "../post.interface";
@@ -13,7 +13,7 @@ export class PostDetailComponent implements OnInit {
 
   params: Params | undefined;
   errorMessage:string = '';
-  post:any;
+  post:Post;
 
   constructor(private route:ActivatedRoute, private postService: PostsService) { }
 

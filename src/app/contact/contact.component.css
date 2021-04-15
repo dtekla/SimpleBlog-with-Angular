@@ -1,4 +1,4 @@
-.contact-header{
+.contact-header {
   height: 15vh;
   background-color: rgba(42, 77, 52, 0.5);
   position: relative;
@@ -17,14 +17,14 @@
   color: #F0F8FF;
 }
 
-.backToHomeBtn{
+.backToHomeBtn {
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.contact-form__container{
+.contact-form__container {
   width: 70%;
   margin: 0 auto;
   position: absolute;
@@ -33,7 +33,7 @@
   transform: translateX(-50%);
 }
 
-.submit-form{
+.submit-form {
   margin: auto 30px;
   display: grid;
 }
@@ -50,12 +50,12 @@ input, textarea {
   box-sizing: border-box;
 }
 
-.checkbox_container{
- flex-direction: row;
+.checkbox_container {
+  flex-direction: row;
   display: flex;
 }
 
-button{
+button {
   margin-top: 30px;
   margin-bottom: 60px;
   display: block;
@@ -71,8 +71,10 @@ button{
 }
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
-  border: 1px solid firebrick;
-  outline: 1px solid firebrick;
+  border: 2px solid firebrick;
+  border-radius: 8px;
 }
 
-
+input[type=checkbox].ng-invalid.ng-touched {
+  outline: 2px solid firebrick;
+}

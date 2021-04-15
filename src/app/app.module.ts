@@ -6,14 +6,12 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { PostDetailComponent } from './posts/post-detail/post-detail.component';
 import {PostsModule} from "./posts/posts.module";
-import {RouterModule} from "@angular/router";
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ContactComponent } from './contact/contact.component';
-import {FormsModule} from "@angular/forms";
 import { PageComponent } from './page/page.component';
 import {FooterComponent} from "./footer/footer.component";
-
-
+import { TermsComponent } from './terms/terms.component';
+import {ContactModule} from "./contact/contact.module";
+import {RouterModule} from "@angular/router";
 
 
 @NgModule({
@@ -21,9 +19,9 @@ import {FooterComponent} from "./footer/footer.component";
     AppComponent,
     PostDetailComponent,
     NotFoundComponent,
-    ContactComponent,
     PageComponent,
-    FooterComponent
+    FooterComponent,
+    TermsComponent
 
   ],
   imports: [
@@ -32,8 +30,8 @@ import {FooterComponent} from "./footer/footer.component";
     MatCardModule,
     MatButtonModule,
     PostsModule,
-    RouterModule,
-    FormsModule
+    ContactModule,
+    RouterModule
   ],
   providers: [],
   exports: [

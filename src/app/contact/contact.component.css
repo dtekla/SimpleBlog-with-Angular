@@ -1,0 +1,108 @@
+.contact-header{
+  height: 15vh;
+  background-color: rgba(42, 77, 52, 0.5);
+  position: relative;
+}
+
+.contact-header mat-card-content {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-header mat-card-title {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 10px;
+  color: #F0F8FF;
+}
+
+.backToHomeBtn{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-form__container{
+  width: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.submit-form{
+  margin: auto 30px;
+}
+
+.contact-form__container mat-card-title {
+  padding: 50px 30px 30px;
+}
+
+mat-card form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input[type=text]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.submitBtn{
+  margin-top: 30px;
+  margin-bottom: 60px;
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
+
+input[type=text].ng-invalid.ng-touched {
+  border: 1px solid red;
+  border-left: 5px solid red;
+  outline: 1px solid red;
+}
+input[type=text].ng-valid.ng-touched {
+  border: 1px solid lime;
+  border-left: 5px solid lime;
+}
+
+.email-error{
+  border: 1px solid red;
+  border-left: 5px solid red;
+  outline: 1px solid red;
+}

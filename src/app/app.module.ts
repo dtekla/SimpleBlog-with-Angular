@@ -8,6 +8,8 @@ import { PostDetailComponent } from './posts/post-detail/post-detail.component';
 import {PostsModule} from "./posts/posts.module";
 import {RouterModule} from "@angular/router";
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ContactComponent } from './contact/contact.component';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -17,6 +19,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     PostDetailComponent,
     NotFoundComponent,
+    ContactComponent,
 
   ],
   imports: [
@@ -26,6 +29,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatButtonModule,
     PostsModule,
     RouterModule,
+    FormsModule
   ],
   providers: [],
   exports: [

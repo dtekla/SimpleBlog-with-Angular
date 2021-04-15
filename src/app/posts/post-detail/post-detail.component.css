@@ -27,14 +27,14 @@
 
 .toAllPostsBtn {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .post-details {
   width: 70%;
-  margin: 20px auto;
+  margin: 0 auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,12 +43,12 @@
 }
 
 .post-details mat-card-title {
-  padding: 20px;
+  padding: 50px 30px 30px;
 
 }
 
 .post-details mat-card-content {
-  padding: 0 20px 30px;
+  padding: 0 30px 30px;
   white-space: pre-line;
   text-align: justify;
 }
@@ -58,4 +58,11 @@ img {
   height: 40vh;
   object-fit: cover;
   position: relative;
+}
+
+app-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

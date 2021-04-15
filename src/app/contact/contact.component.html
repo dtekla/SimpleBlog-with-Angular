@@ -1,0 +1,70 @@
+<mat-card class="contact-header">
+  <mat-card-content>
+    <mat-card-title>Contact Us</mat-card-title>
+  </mat-card-content>
+  <a mat-button class="backToHomeBtn" routerLink="">home</a>
+</mat-card>
+
+<mat-card class="contact-form__container">
+  <mat-card-title>We are keen to hear from You!</mat-card-title>
+
+  <form #contactForm="ngForm" (submit)="onSubmit(contactForm)" class="submit-form">
+    <label for="name">Name</label>
+    <input type="text" #nameField="ngModel"
+           ngModel
+           id="name"
+           name="nameField"
+           required
+           minlength="6"
+    >
+
+    <div class="error" *ngIf="nameField.invalid && !nameField.value && nameField.touched">
+      Please fill your name!
+    </div>
+    <div class="error" *ngIf="nameField.invalid && nameField.value.length < 5 && nameField.touched">
+      Name should be at least 6 characters!
+    </div>
+
+
+    <label for="email">Email</label>
+    <input type="email" #emailField="ngModel"
+           id="email"
+           name="emailField"
+           ngModel
+           required
+    >
+
+    <div class="error" *ngIf="emailField.invalid && !emailField.value && emailField.touched">
+      Please fill your email address!
+    </div>
+    <div class="error" *ngIf="validateEmail(emailField.value) === false && emailField.touched">
+      Please fill a valid email!
+    </div>
+
+    <label for="message">Message</label>
+    <textarea name="messageField"
+              id="message"
+              ngModel
+              required
+              minlength="100"></textarea>
+
+    <input type="checkbox"
+           id="acceptField"
+           name="acceptField"
+           ngModel
+           class="termsConditions"
+           required>
+    <label  for="acceptField">I red and accept the <a href="#">Terms & Conditions</a></label>
+
+    <button class="submitBtn" type="submit" [disabled]="contactForm.form.invalid" >Send!</button>
+  </form>
+
+  <code>
+    {{contactForm.value | json}}
+  </code>
+
+  form validity: {{contactForm.form.valid}}
+
+</mat-card>
+
+

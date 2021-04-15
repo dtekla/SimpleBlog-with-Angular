@@ -10,6 +10,7 @@ import {RouterModule} from "@angular/router";
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import {FormsModule} from "@angular/forms";
+import { PageComponent } from './page/page.component';
 
 
 
@@ -20,6 +21,7 @@ import {FormsModule} from "@angular/forms";
     PostDetailComponent,
     NotFoundComponent,
     ContactComponent,
+    PageComponent,
 
   ],
   imports: [

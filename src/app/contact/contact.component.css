@@ -35,31 +35,16 @@
 
 .submit-form{
   margin: auto 30px;
+  display: grid;
 }
 
 .contact-form__container mat-card-title {
-  padding: 50px 30px 30px;
+  padding: 40px 30px 30px;
 }
 
-mat-card form {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-input[type=text]  {
-  width: 100%;
+input  {
   padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=email] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -79,7 +64,7 @@ textarea {
   margin-top: 30px;
   margin-bottom: 60px;
   display: block;
-  width: 100%;
+  width: 25%;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -87,18 +72,16 @@ textarea {
 }
 
 .error {
-  color: red;
+  color: firebrick;
   font-size: 10px;
+  display: block;
+  width: 100%;
+  margin: -5px auto 0 0;
 }
 
 input[type=text].ng-invalid.ng-touched {
-  border: 1px solid red;
-  border-left: 5px solid red;
-  outline: 1px solid red;
-}
-input[type=text].ng-valid.ng-touched {
-  border: 1px solid lime;
-  border-left: 5px solid lime;
+  border: 1px solid firebrick;
+  outline: 1px solid firebrick;
 }
 
 .email-error{
@@ -106,3 +89,4 @@ input[type=text].ng-valid.ng-touched {
   border-left: 5px solid red;
   outline: 1px solid red;
 }
+

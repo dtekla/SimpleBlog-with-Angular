@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:host{
+  display: block;
+}
 
 mat-card {
   width: 100%;
@@ -9,7 +12,6 @@ mat-card {
 }
 
 .footer-btns {
-  font-family: 'Roboto', sans-serif;
   color: #F0F8FF;
   padding: 5px 10px;
   margin: 0 10px;

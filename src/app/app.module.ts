@@ -11,6 +11,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import {FormsModule} from "@angular/forms";
 import { PageComponent } from './page/page.component';
+import {FooterComponent} from "./footer/footer.component";
 
 
 
@@ -22,6 +23,7 @@ import { PageComponent } from './page/page.component';
     NotFoundComponent,
     ContactComponent,
     PageComponent,
+    FooterComponent
 
   ],
   imports: [

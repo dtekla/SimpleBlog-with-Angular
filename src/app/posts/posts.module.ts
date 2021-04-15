@@ -11,7 +11,7 @@ import {HeaderComponent} from "../header/header.component";
 import {RouterModule} from "@angular/router";
 import {PostsService} from "./posts.service";
 import { UcfirstPipe } from './post-detail/ucfirst.pipe';
-import {FooterComponent} from "../footer/footer.component";
+
 
 
 @NgModule({
@@ -21,14 +21,13 @@ import {FooterComponent} from "../footer/footer.component";
     PostItemComponent,
     HeaderComponent,
     UcfirstPipe,
-    FooterComponent
+
   ],
   exports: [
     TruncatePipe,
     PostsComponent,
     HeaderComponent,
     UcfirstPipe,
-    FooterComponent,
   ],
   imports: [
     CommonModule,

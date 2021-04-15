@@ -21,7 +21,7 @@
     <div class="error" *ngIf="nameField.invalid && !nameField.value && nameField.touched">
       Please fill your name!
     </div>
-    <div class="error" *ngIf="nameField.invalid && nameField.value.length < 5 && nameField.touched">
+    <div class="error" *ngIf="nameField.invalid && nameField.value.length < 6 && nameField.touched && nameField.value">
       Name should be at least 6 characters!
     </div>
 

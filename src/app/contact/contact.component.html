@@ -10,7 +10,8 @@
 
   <form #contactForm="ngForm" (submit)="onSubmit(contactForm)" class="submit-form">
     <label for="name">Name</label>
-    <input type="text" #nameField="ngModel"
+    <input type="text"
+           #nameField="ngModel"
            ngModel
            id="name"
            name="nameField"
@@ -27,7 +28,8 @@
 
 
     <label for="email">Email</label>
-    <input type="email" #emailField="ngModel"
+    <input type="email"
+           #emailField="ngModel"
            id="email"
            name="emailField"
            ngModel
@@ -37,7 +39,7 @@
     <div class="error" *ngIf="emailField.invalid && !emailField.value && emailField.touched">
       Please fill your email address!
     </div>
-    <div class="error" *ngIf="validateEmail(emailField.value) === false && emailField.touched">
+    <div class="error" *ngIf="validateEmail(emailField.value) === false && emailField.touched && emailField.value">
       Please fill a valid email!
     </div>
 
@@ -46,25 +48,43 @@
               id="message"
               ngModel
               required
-              minlength="100"></textarea>
+              minlength="100"
+              #messageField="ngModel">
 
-    <input type="checkbox"
-           id="acceptField"
-           name="acceptField"
-           ngModel
-           class="termsConditions"
-           required>
-    <label  for="acceptField">I red and accept the <a href="#">Terms & Conditions</a></label>
+    </textarea>
 
-    <button class="submitBtn" type="submit" [disabled]="contactForm.form.invalid" >Send!</button>
+    <div class="error" *ngIf="messageField.touched && !messageField.value">
+      Please fill your message!
+    </div>
+    <div class="error" *ngIf="messageField.touched && messageField.value && messageField.value.length < 101">
+      Message should be at least 100 chars long!
+    </div>
+
+    <div class="checkbox_container">
+      <input type="checkbox"
+             id="acceptField"
+             name="acceptField"
+             ngModel
+             class="termsConditions"
+             required
+             #acceptField="ngModel">
+
+      <label  for="acceptField">I red and accept the <a href="#">Terms & Conditions</a></label>
+    </div>
+
+
+    <div class="error" *ngIf="acceptField.invalid &&acceptField.touched">
+      Please read and accept the Terms & Conditions to send us the message
+    </div>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.form.invalid" >Send!</button>
   </form>
+</mat-card>
 
+  <!--
   <code>
     {{contactForm.value | json}}
   </code>
 
   form validity: {{contactForm.form.valid}}
-
-</mat-card>
-
-
+-->

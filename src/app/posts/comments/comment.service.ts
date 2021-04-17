@@ -9,14 +9,14 @@ import {catchError, retry} from "rxjs/operators";
 })
 export class CommentService {
 
-  static readonly API_URL = "http://localhost:3000/comments"
+  static readonly API_URL = "http://localhost:3000/comments?_sort=id&_order=desc"
 
   constructor(private http: HttpClient) { }
 
   getComments(postId:number): Observable<Comment[]> {
     // @ts-ignore
     return this.http.get<Comment[]>(CommentService.API_URL,{
-      params: new HttpParams().set('_postId', postId.toString())
+      params: new HttpParams().set('postId', postId.toString())
     }).pipe(
       retry(1),
       catchError(this.handleError)

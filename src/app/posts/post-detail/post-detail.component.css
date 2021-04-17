@@ -35,12 +35,7 @@
 
 .post-details {
   width: 70%;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-
+  margin: 20px auto 0 auto;
 }
 
 .post-details mat-card-title {

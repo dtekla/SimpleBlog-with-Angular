@@ -11,6 +11,7 @@ import {HeaderComponent} from "../header/header.component";
 import {RouterModule} from "@angular/router";
 import {PostsService} from "./posts.service";
 import { UcfirstPipe } from './post-detail/ucfirst.pipe';
+import {CommentsModule} from "./comments/comments.module";
 
 
 
@@ -36,7 +37,7 @@ import { UcfirstPipe } from './post-detail/ucfirst.pipe';
     HttpClientModule,
     AppRoutingModule,
     RouterModule,
-    CommonModule
+    CommentsModule
   ],
   providers: [
     PostsService

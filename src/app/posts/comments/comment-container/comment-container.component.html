@@ -1,1 +1,14 @@
-<p>comment-container works!</p>
+<div class="comments_container">
+  <div class="title_container">
+    <h1>Comments</h1>
+  </div>
+  <div class="decoration-line"></div>
+  <mat-card class="comment-item" *ngFor="let item of comment">
+    <app-comment-item [item]= "item"></app-comment-item>
+  </mat-card>
+
+  <div class="noComment-text" *ngIf="comment.length === 0 && errorMessage === ''">
+    <p><span>Any thoughts?</span>Be the first, and drop your ideas on the topic!</p>
+  </div>
+</div>
+

@@ -36,6 +36,7 @@ import { UcfirstPipe } from './post-detail/ucfirst.pipe';
     HttpClientModule,
     AppRoutingModule,
     RouterModule,
+    CommonModule
   ],
   providers: [
     PostsService

@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Comment} from "../comment.interface";
 import {CommentService} from "../comment.service";
 import {ActivatedRoute, Params} from "@angular/router";
-import {switchMap} from "rxjs/operators";
+import {switchMap, tap} from "rxjs/operators";
 
 
 @Component({
@@ -25,20 +25,16 @@ export class CommentContainerComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.route.params.subscribe(params => {
-      console.log(params.id)
-      this.postId = params.id
-    })
-
-    this.commentService.getComments(this.postId).subscribe(comment => {
-        this.comment = comment
-      },
-      error => {
-        this.errorMessage = error
-      }
-    );
-
+    this.route.params.pipe(
+      tap(params => {
+        this.postId = params.id
+      }),
+      switchMap(params => this.commentService.getComments(params.id)))
+      .subscribe(data => {
+        this.comment = data;
+      });
   }
-
-
 }
+
+
+

@@ -12,7 +12,7 @@ import {FooterComponent} from "./footer/footer.component";
 import { TermsComponent } from './terms/terms.component';
 import {ContactModule} from "./contact/contact.module";
 import {RouterModule} from "@angular/router";
-import {CommentsModule} from "./posts/comments/comments.module";
+import {CommentsModule} from "./comments/comments.module";
 
 
 @NgModule({

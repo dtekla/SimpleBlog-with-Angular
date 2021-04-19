@@ -12,7 +12,7 @@ import {switchMap, tap} from "rxjs/operators";
 })
 export class CommentContainerComponent implements OnInit {
 
-  comment: Comment[];
+  comments: Comment[];
   errorMessage: string = '';
   params: Params | undefined;
   postId: number;
@@ -31,7 +31,7 @@ export class CommentContainerComponent implements OnInit {
       }),
       switchMap(params => this.commentService.getComments(params.id)))
       .subscribe(data => {
-        this.comment = data;
+        this.comments = data;
       });
   }
 }

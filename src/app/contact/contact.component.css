@@ -27,10 +27,6 @@
 .contact-form__container {
   width: 70%;
   margin: 0 auto;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .submit-form {
@@ -78,3 +74,56 @@ input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
 input[type=checkbox].ng-invalid.ng-touched {
   outline: 2px solid firebrick;
 }
+
+.success-message {
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  background: #E8F3DC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #90C555;
+}
+
+.success-message h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.success-message p {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #8EC351;
+}
+
+.error-message{
+  width: 90%;
+  height: 50px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  background: #ffd6e0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.red-icon{
+  color:#ff4977 ;
+}
+
+.error-message mat-icon{
+  display: inline-block;
+}
+
+.error-message h1 {
+  font-size: 16px;
+  padding: 10px;
+  color: #ff4977;
+  margin: 0;
+}
+

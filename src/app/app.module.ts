@@ -14,6 +14,7 @@ import {ContactModule} from "./contact/contact.module";
 import {RouterModule} from "@angular/router";
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,7 @@ import {RouterModule} from "@angular/router";
     MatButtonModule,
     PostsModule,
     ContactModule,
-    RouterModule
+    RouterModule,
   ],
   providers: [],
   exports: [

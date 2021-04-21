@@ -1,0 +1,72 @@
+.comment-form{
+  margin: auto 0;
+  display: grid;
+  grid-template-columns: [line1] 30% [line2] 30% [line3] 40%;
+  grid-template-rows:  repeat(5, 1fr) 2fr;
+  column-gap: 5px;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#firstName_label {
+  grid-column: 1;
+  grid-row: 1 ;
+  align-self: end;
+}
+#firstName {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#lastName_label {
+  grid-column: 2;
+  grid-row: 1 ;
+  align-self: end;
+}
+#lastName {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+#email_label {
+  grid-column: 3;
+  grid-row: 1 ;
+  align-self: end;
+}
+#email {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#comment_label {
+  grid-column: 1;
+  grid-row: 3 ;
+  align-self: end;
+}
+#comment {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+}
+
+.checkbox_container{
+  grid-column: 1 / span 2;
+  grid-row: 5;
+  align-self: end;
+}
+
+#acceptField{
+  margin: 0 5px;
+}
+
+#send_button{
+  grid-column: 1;
+  grid-row: 6;
+  width: 70%;
+  height: 40px;
+  align-self: center;
+}

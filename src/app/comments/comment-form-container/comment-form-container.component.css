@@ -1,0 +1,16 @@
+.comment-form{
+  width: 70%;
+  margin: 0 auto 60px;
+}
+
+.comment-form h2{
+  font-size: 20px;
+  font-weight: bold;
+  color: #F83769;
+  margin: 0;
+}
+
+.comment-form h2 span {
+  font-size: 18px;
+  font-weight: normal;
+}

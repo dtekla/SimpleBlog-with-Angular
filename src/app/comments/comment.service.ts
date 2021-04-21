@@ -3,6 +3,7 @@ import {HttpClient, HttpErrorResponse, HttpParams} from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
 import {Comment} from "./comment.interface";
 import {catchError, retry} from "rxjs/operators";
+import {newComment} from "./newComment.interface";
 
 @Injectable({
   providedIn: 'root'
@@ -34,5 +35,13 @@ export class CommentService {
 
     return throwError(errorMessage);
   }
+
+  static readonly API_URL_2 = `http://localhost:3000/comments/?postId=`
+
+  addComment(comment: string, id: number): Observable<void> {
+    // @ts-ignore
+    return this.http.post(`${API_URL_2} ${id}`)
+  }
+
 }
 

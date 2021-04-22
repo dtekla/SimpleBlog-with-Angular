@@ -43,12 +43,12 @@ input, textarea {
   grid-row: 2;
 }
 
-#comment_label {
+#body_label {
   grid-column: 1;
   grid-row: 3 ;
   align-self: end;
 }
-#comment {
+#body {
   grid-column: 1 / span 3;
   grid-row: 4;
 }
@@ -69,4 +69,48 @@ input, textarea {
   width: 70%;
   height: 40px;
   align-self: center;
+}
+
+.success-message {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  background: #E8F3DC;
+  color: #90C555;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.success-message h2 {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px;
+}
+
+.error-message{
+  width: 90%;
+  height: 50px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  background: #ffd6e0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.red-icon{
+  color:#ff4977 ;
+}
+
+.error-message mat-icon{
+  display: inline-block;
+}
+
+.error-message h2 {
+  font-size: 16px;
+  padding: 10px;
+  color: #ff4977;
+  margin: 0;
 }

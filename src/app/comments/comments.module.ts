@@ -9,6 +9,7 @@ import { CommentFormComponent } from './comment-form-container/comment-form/comm
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterModule} from "@angular/router";
+import {MatIconModule} from '@angular/material/icon';
 
 
 
@@ -24,7 +25,8 @@ import {RouterModule} from "@angular/router";
     MatCardModule,
     ReactiveFormsModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    MatIconModule
   ],
   exports: [
     CommentContainerComponent

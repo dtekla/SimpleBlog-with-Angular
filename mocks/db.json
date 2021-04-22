@@ -20,8 +20,15 @@
       "name": "Tulo James",
       "email": "tulo@gmail.com",
       "body": "Vivamus in leo eget ligula sodales molestie. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
+    },
+    {
+      "body": null,
+      "postId": 3,
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "id": 6
     }
-
   ],
   "contactFormMessages": [
     {
@@ -51,6 +58,20 @@
       "messageField": " kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n",
       "acceptField": true,
       "id": 4
+    },
+    {
+      "nameField": "Dávid Anna Tekla",
+      "emailField": "davi@gmail.com",
+      "messageField": ".pipe(\n      retry(1),\n      catchError(this.handleError)\n    );\n  }\n\n  handleError(error: HttpErrorResponse): Observable<string> {\n    let errorMessage = '';\n\n    if(error.error instanceof ProgressEvent) {\n      errorMessage = `Error message: ${error.message}`;\n    } else {\n      errorMessage = `Error message: ${error.message}`;\n    }\n\n    return throwError(errorMessage);",
+      "acceptField": true,
+      "id": 5
+    },
+    {
+      "nameField": "Dávid Anna Tekla",
+      "emailField": "davi@gmail.com",
+      "messageField": ".pipe(\n      retry(1),\n      catchError(this.handleError)\n    );\n  }\n\n  handleError(error: HttpErrorResponse): Observable<string> {\n    let errorMessage = '';\n\n    if(error.error instanceof ProgressEvent) {\n      errorMessage = `Error message: ${error.message}`;\n    } else {\n      errorMessage = `Error message: ${error.message}`;\n    }\n\n    return throwError(errorMessage);",
+      "acceptField": true,
+      "id": 6
     }
   ],
   "posts": [

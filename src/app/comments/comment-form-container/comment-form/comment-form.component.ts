@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormControl, FormGroup} from "@angular/forms";
-import {ActivatedRoute} from "@angular/router";
-import {CommentService} from "../../comment.service";
+
 
 @Component({
   selector: 'app-comment-form',
@@ -10,18 +9,26 @@ import {CommentService} from "../../comment.service";
 })
 export class CommentFormComponent implements OnInit {
 
+  @Input()
+  suc
+
+  @Input()
+  err
+
   commentForm: FormGroup = new FormGroup({
     firstName: new FormControl(),
     lastName: new FormControl(),
     email: new FormControl(),
-    textarea: new FormControl(),
+    body: new FormControl(),
     checkbox: new FormControl(),
     button: new FormControl()
   })
-  constructor(  private commentService: CommentService) { }
+  constructor() { }
+
+  @Output() commentDataToParent = new EventEmitter();
 
   onSubmit() {
-
+    this.commentDataToParent.emit(this.commentForm.value)
   }
 
   ngOnInit(): void {

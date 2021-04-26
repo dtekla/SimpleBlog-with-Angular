@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {FormControl, FormGroup} from "@angular/forms";
+import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
 
 
 @Component({
@@ -16,22 +16,55 @@ export class CommentFormComponent implements OnInit {
   err
 
   commentForm: FormGroup = new FormGroup({
-    firstName: new FormControl(),
+    firstName: new FormControl(
+      null,
+      [
+        Validators.required,
+        Validators.minLength(6),
+      ]
+    ),
     lastName: new FormControl(),
-    email: new FormControl(),
-    body: new FormControl(),
-    checkbox: new FormControl(),
+    email: new FormControl(
+      null,
+      [
+        Validators.required,
+        Validators.email,
+      ]
+    ),
+    body: new FormControl(
+      null,
+      [
+        Validators.required,
+        Validators.minLength(30),
+      ]
+    ),
+    checkbox: new FormControl(
+      [Validators.requiredTrue]
+    ),
     button: new FormControl()
   })
   constructor() { }
 
   @Output() commentDataToParent = new EventEmitter();
 
+  ngOnInit(): void {
+  }
+
   onSubmit() {
     this.commentDataToParent.emit(this.commentForm.value)
   }
 
-  ngOnInit(): void {
+
+  get email(): AbstractControl | null {
+    return this.commentForm.get('email');
+  }
+
+  get terms(): AbstractControl | null {
+    return this.commentForm.get('checkbox');
+  }
+
+  get body(): AbstractControl | null {
+    return this.commentForm.get('body');
   }
 
 }

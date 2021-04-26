@@ -1,7 +1,9 @@
 <mat-card>
   <mat-card-content>
-    <mat-card-title>Simple Blog</mat-card-title>
-    <mat-card-subtitle>Thoughts, stories and ideas.</mat-card-subtitle>
+    <ng-content select="mat-card-title"></ng-content>
+    <ng-content select="mat-card-subtitle"></ng-content>
+    <ng-content class=".label"></ng-content>
   </mat-card-content>
+  <ng-content select="a"></ng-content>
 </mat-card>
 

@@ -1,4 +1,7 @@
-<app-header></app-header>
+<app-header>
+  <mat-card-title>Simple Blog</mat-card-title>
+  <mat-card-subtitle>Thoughts, stories and ideas.</mat-card-subtitle>
+</app-header>
 <div class="grid-container">
   <mat-card *ngFor="let post of posts">
     <app-post-item [post]="post"></app-post-item>

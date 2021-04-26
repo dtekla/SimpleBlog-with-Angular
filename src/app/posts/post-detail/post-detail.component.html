@@ -1,10 +1,11 @@
-<mat-card class="detail-header">
-  <mat-card-content>
+<app-header class="detail-header">
   <mat-card-title>Simple Blog</mat-card-title>
   <mat-card-subtitle>Thoughts, stories and ideas.</mat-card-subtitle>
-  </mat-card-content>
-  <a mat-button class="toAllPostsBtn" routerLink="">all posts</a>
-</mat-card>
+  <p class="label">author: {{post.body.slice(2,7)}}</p>
+  <p class="label">website: {{post.body.slice(8,15).split(" ").join("")}}.org</p>
+  <a mat-button class="backToPosts-btn" routerLink="">all posts</a>
+</app-header>
+
 <img src="{{post.postImg}}" alt="blog picture">
 <mat-card class="post-details">
   <mat-card-title>{{post.title | ucfirst}}</mat-card-title>

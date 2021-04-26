@@ -8,12 +8,6 @@
   position: relative;
 }
 
-.detail-header mat-card-content {
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 .detail-header mat-card-title {
   margin-bottom: 10px;
@@ -26,12 +20,21 @@
   font-style: italic;
 }
 
-.toAllPostsBtn {
+.label{
+  color: #F0F8FF;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+
+.backToPosts-btn {
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
+
 
 .post-details {
   width: 70%;

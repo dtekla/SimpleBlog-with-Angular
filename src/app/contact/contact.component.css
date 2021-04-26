@@ -4,21 +4,14 @@
   position: relative;
 }
 
-.contact-header mat-card-content {
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .contact-header mat-card-title {
   margin-bottom: 10px;
   color: #F0F8FF;
 }
 
-.backToHomeBtn {
+.backToHome-btn {
   position: absolute;
-  right: 20px;
+  right: 40px;
   top: 50%;
   transform: translateY(-50%);
 }

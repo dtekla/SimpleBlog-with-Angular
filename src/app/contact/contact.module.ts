@@ -5,6 +5,7 @@ import {FormsModule} from "@angular/forms";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import {RouterModule} from "@angular/router";
+import {PostsModule} from "../posts/posts.module";
 
 
 
@@ -17,7 +18,8 @@ import {RouterModule} from "@angular/router";
     FormsModule,
     MatCardModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    PostsModule
   ]
 })
 export class ContactModule { }

@@ -18,7 +18,10 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showForm: boolean = true;
+  successfulSending: boolean;
   message: ContactFormMessage;
+  errorMessage: string= '';
 
   validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -27,12 +30,17 @@ export class ContactComponent implements OnInit {
   }
 
 
-
   onSubmit(form: NgForm):void{
     this.contactService.sendMessage(form.value).subscribe(message => {
-      console.log(message);
-    })
-
+      this.message = message;
+      this.successfulSending= true
+      this.showForm = false
+    },
+      error => {
+        this.errorMessage = error;
+        this.successfulSending = false;
+      }
+    );
   }
 
 

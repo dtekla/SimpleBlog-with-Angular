@@ -37,20 +37,6 @@
       "acceptField": true,
       "id": 2
     },
-    {
-      "nameField": "grumps",
-      "emailField": "grrrrr@gmail.com",
-      "messageField": "Pocok a kedvencem'''grrrrrumps\nkkjghjghfjhfgdhgdhgdhfdgfdhgdhgdhgdhgdhgdhgdhgdAA<mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card>",
-      "acceptField": true,
-      "id": 3
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": " kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n",
-      "acceptField": true,
-      "id": 4
-    }
   ],
   "posts": [
     {

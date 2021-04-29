@@ -2,7 +2,7 @@
   margin: auto 0;
   display: grid;
   grid-template-columns: [line1] 30% [line2] 30% [line3] 40%;
-  grid-template-rows:  repeat(5, 1fr) 2fr;
+  grid-template-rows:  repeat(2, 1fr) 0.2fr repeat(2, 1fr) 0.2fr 1fr 0.2fr 2fr;
   column-gap: 5px;
 }
 
@@ -45,17 +45,17 @@ input, textarea {
 
 #body_label {
   grid-column: 1;
-  grid-row: 3 ;
+  grid-row: 4;
   align-self: end;
 }
 #body {
   grid-column: 1 / span 3;
-  grid-row: 4;
+  grid-row: 5;
 }
 
 .checkbox_container{
   grid-column: 1 / span 2;
-  grid-row: 5;
+  grid-row: 7;
   align-self: end;
 }
 
@@ -65,10 +65,10 @@ input, textarea {
 
 #send_button{
   grid-column: 1;
-  grid-row: 6;
+  grid-row: 9;
   width: 70%;
   height: 40px;
-  align-self: center;
+  align-self: end;
 }
 
 .success-message {
@@ -114,3 +114,43 @@ input, textarea {
   color: #ff4977;
   margin: 0;
 }
+
+.error-firstName{
+  font-size: 10px;
+  color: #ff4977;
+  grid-column: 1;
+  grid-row: 3;
+  margin-left: 5px;
+}
+
+
+.error-lastName{
+  font-size: 10px;
+  color: #ff4977;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.error-email{
+   font-size: 10px;
+   color: #ff4977;
+   grid-column: 3;
+   grid-row: 3;
+ }
+
+.error-comment{
+  font-size: 10px;
+  color: #ff4977;
+  grid-column: 1 / 2 span;
+  grid-row: 6;
+  margin-left: 5px;
+}
+
+.error-terms{
+  font-size: 10px;
+  color: #ff4977;
+  grid-column: 1 / 2 span;
+  grid-row: 8;
+  margin-left: 5px;
+}
+

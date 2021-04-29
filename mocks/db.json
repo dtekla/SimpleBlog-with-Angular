@@ -53,6 +53,46 @@
       "lastName": "Tekla",
       "email": "davi@gmail.com",
       "id": 8
+    },
+    {
+      "body": "vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv",
+      "postId": 1,
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "id": 9
+    },
+    {
+      "body": "hello false, Validators.requiredTrue",
+      "postId": 1,
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "id": 10
+    },
+    {
+      "body": "false, Validators.requiredTruefalse, Validators.requiredTruefalse, Validators.requiredTrue",
+      "postId": 1,
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "id": 11
+    },
+    {
+      "body": "false, Validators.requiredTruefalse, Validators.requiredTruefalse, Validators.requiredTrue",
+      "postId": 3,
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "id": 12
+    },
+    {
+      "body": "9ufalse, Validators.requiredTruefalse, Validators.requiredTruefalse, Validators.requiredTrue",
+      "postId": 3,
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "id": 13
     }
   ],
   "contactFormMessages": [
@@ -97,6 +137,27 @@
       "messageField": ".pipe(\n      retry(1),\n      catchError(this.handleError)\n    );\n  }\n\n  handleError(error: HttpErrorResponse): Observable<string> {\n    let errorMessage = '';\n\n    if(error.error instanceof ProgressEvent) {\n      errorMessage = `Error message: ${error.message}`;\n    } else {\n      errorMessage = `Error message: ${error.message}`;\n    }\n\n    return throwError(errorMessage);",
       "acceptField": true,
       "id": 6
+    },
+    {
+      "nameField": "Dávid Anna Tekla",
+      "emailField": "davi@gmail.com",
+      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "acceptField": true,
+      "id": 7
+    },
+    {
+      "nameField": "Dávid Anna Tekla",
+      "emailField": "davi@gmail.com",
+      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "acceptField": true,
+      "id": 8
+    },
+    {
+      "nameField": "Dávid Anna Tekla",
+      "emailField": "davi@gmail.com",
+      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "acceptField": true,
+      "id": 9
     }
   ],
   "posts": [

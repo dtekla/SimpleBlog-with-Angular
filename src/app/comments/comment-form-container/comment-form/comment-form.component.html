@@ -19,24 +19,46 @@
            id="firstName"
            placeholder="Your name here">
 
+    <div class="error-firstName" *ngIf="firstName?.touched">
+      <p *ngIf="firstName?.errors?.required">
+        Please fill your name.
+      </p>
+
+      <p *ngIf="firstName?.invalid && firstName.value !== ''">
+        Your name should be at least 5 characters long.
+      </p>
+    </div>
+
+
     <label id="lastName_label" for="lastName">Lastname: </label>
     <input type="text"
            formControlName="lastName"
            id="lastName"
            placeholder="Your last name here">
 
+    <div class="error-lastName" *ngIf="lastName?.touched">
+      <p *ngIf="lastName?.errors?.required">
+        Please fill your name.
+      </p>
+
+      <p *ngIf="lastName?.invalid && lastName.value !== ''">
+        Your name should be at least 5 characters long.
+      </p>
+    </div>
+
+
     <label id="email_label" for="email">Email</label>
     <input type="email"
            id="email"
            formControlName="email"
            placeholder="your@email.com">
-    <div class="error-containers" *ngIf="email?.invalid && email?.touched">
 
-      <p class="error" *ngIf="email?.errors?.required">
+    <div class="error-email" *ngIf="email?.touched">
+      <p *ngIf="email?.errors?.required">
         Please fill your email address!
       </p>
 
-      <p class="error" *ngIf="email?.errors?.email">
+      <p *ngIf="email?.errors?.invalid && email.value !== ''">
         Please fill a valid email address!
       </p>
     </div>
@@ -46,26 +68,29 @@
               formControlName="body"
               placeholder="...your message goes here.">
     </textarea>
-    <div class="error-containers" *ngIf="body.invalid && body.touched">
 
-      <p class="error" *ngIf="body.errors.required">
-        min 30
+    <div class="error-comment" *ngIf="body?.touched">
+      <p *ngIf="body?.errors?.required">
+        Please fill the comment section!
+      </p>
+
+      <p *ngIf="body?.errors?.minlength">
+        Comment should be at least 30 char long.
       </p>
     </div>
 
     <div class="checkbox_container">
-      <input type="checkbox" id="acceptField">
+      <input type="checkbox" id="acceptField" formControlName="terms">
       <label id="acceptField_label" for="acceptField">I red and accept the <a routerLink="/terms&conditions">Terms &
         Conditions</a></label>
-      <div class="error-containers" *ngIf="terms?.invalid && terms?.touched">
-
-        <p class="error" *ngIf="terms?.errors?.required">
-          PLease read and accept terms!
-        </p>
-      </div>
     </div>
 
-    <button mat-raised-button color="primary" id="send_button" type="submit" [disabled]="!commentForm.valid">Send!</button>
+    <p class="error-terms" *ngIf="terms?.errors?.required && terms?.touched">
+      Please accept Terms & Conditions!
+    </p>
+
+    <button mat-raised-button color="primary" id="send_button" type="submit" [disabled]="commentForm.invalid">Send!
+    </button>
   </form>
 
 </div>

@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
+import {AbstractControl, FormBuilder, FormGroup, Validators} from "@angular/forms";
+
 
 
 @Component({
@@ -15,35 +16,29 @@ export class CommentFormComponent implements OnInit {
   @Input()
   err
 
-  commentForm: FormGroup = new FormGroup({
-    firstName: new FormControl(
-      null,
+  commentForm: FormGroup = this.fb.group({
+    firstName: [null,
+        [
+          Validators.required,
+          Validators.minLength(5),
+        ]],
+    lastName: [
+        null,
+        [
+          Validators.required,
+          Validators.minLength(5),
+        ]],
+    email: [null, Validators.required],
+    body: [null,
       [
-        Validators.required,
-        Validators.minLength(6),
-      ]
-    ),
-    lastName: new FormControl(),
-    email: new FormControl(
-      null,
-      [
-        Validators.required,
-        Validators.email,
-      ]
-    ),
-    body: new FormControl(
-      null,
-      [
-        Validators.required,
-        Validators.minLength(30),
-      ]
-    ),
-    checkbox: new FormControl(
-      [Validators.requiredTrue]
-    ),
-    button: new FormControl()
+      Validators.required,
+      Validators.minLength(30)
+      ]],
+    terms: [false, Validators.requiredTrue]
   })
-  constructor() { }
+
+
+  constructor(private fb: FormBuilder) { }
 
   @Output() commentDataToParent = new EventEmitter();
 
@@ -52,15 +47,24 @@ export class CommentFormComponent implements OnInit {
 
   onSubmit() {
     this.commentDataToParent.emit(this.commentForm.value)
+    this.commentForm.reset();
   }
 
+
+  get firstName(): AbstractControl | null {
+    return this.commentForm.get('firstName');
+  }
+
+  get lastName(): AbstractControl | null {
+    return this.commentForm.get('lastName');
+  }
 
   get email(): AbstractControl | null {
     return this.commentForm.get('email');
   }
 
   get terms(): AbstractControl | null {
-    return this.commentForm.get('checkbox');
+    return this.commentForm.get('terms');
   }
 
   get body(): AbstractControl | null {

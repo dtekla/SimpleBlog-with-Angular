@@ -14,6 +14,7 @@ import { UcfirstPipe } from './post-detail/ucfirst.pipe';
 
 
 
+
 @NgModule({
   declarations: [
     TruncatePipe,

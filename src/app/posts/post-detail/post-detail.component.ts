@@ -14,14 +14,15 @@ export class PostDetailComponent implements OnInit {
   params: Params | undefined;
   errorMessage:string = '';
   post:Post;
+  id;
 
   constructor(private route:ActivatedRoute, private postService: PostsService) { }
 
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      const postId = params['id'];
-      this.postService.getPostId(postId).subscribe(
+      this.id = params['id'];
+      this.postService.getPostId(this.id).subscribe(
         post => {this.post = post;
         },
         error => {

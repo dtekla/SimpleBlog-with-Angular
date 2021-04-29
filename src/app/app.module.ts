@@ -12,6 +12,7 @@ import {FooterComponent} from "./footer/footer.component";
 import { TermsComponent } from './terms/terms.component';
 import {ContactModule} from "./contact/contact.module";
 import {RouterModule} from "@angular/router";
+import {CommentsModule} from "./comments/comments.module";
 
 
 
@@ -25,15 +26,16 @@ import {RouterModule} from "@angular/router";
     TermsComponent
 
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    MatButtonModule,
-    PostsModule,
-    ContactModule,
-    RouterModule,
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        MatButtonModule,
+        PostsModule,
+        ContactModule,
+        RouterModule,
+        CommentsModule
+    ],
   providers: [],
   exports: [
   ],

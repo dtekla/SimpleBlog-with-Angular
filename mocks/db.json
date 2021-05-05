@@ -30,69 +30,12 @@
       "id": 6
     },
     {
-      "body": [
-        null,
-        null
-      ],
-      "postId": 3,
-      "firstName": [
-        null,
-        null
-      ],
-      "lastName": null,
-      "email": [
-        null,
-        null
-      ],
+      "body": " return this.http.post<User>(UserService.API_URL, user) return this.http.post<User>(UserService.API_URL, user)",
+      "postId": 2,
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
       "id": 7
-    },
-    {
-      "body": null,
-      "postId": 3,
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "id": 8
-    },
-    {
-      "body": "vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv",
-      "postId": 1,
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "id": 9
-    },
-    {
-      "body": "hello false, Validators.requiredTrue",
-      "postId": 1,
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "id": 10
-    },
-    {
-      "body": "false, Validators.requiredTruefalse, Validators.requiredTruefalse, Validators.requiredTrue",
-      "postId": 1,
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "id": 11
-    },
-    {
-      "body": "false, Validators.requiredTruefalse, Validators.requiredTruefalse, Validators.requiredTrue",
-      "postId": 3,
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "id": 12
-    },
-    {
-      "body": "9ufalse, Validators.requiredTruefalse, Validators.requiredTruefalse, Validators.requiredTrue",
-      "postId": 3,
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "id": 13
     }
   ],
   "contactFormMessages": [

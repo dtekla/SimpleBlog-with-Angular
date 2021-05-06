@@ -42,6 +42,8 @@ export class CommentFormContainerComponent implements OnInit {
       .subscribe(data => {
         console.log(data);
         this.successfulSending = true;
+      }, error => {
+        this.errorMessage = error;
       });
   }
 }

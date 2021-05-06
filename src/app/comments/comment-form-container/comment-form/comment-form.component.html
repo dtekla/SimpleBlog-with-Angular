@@ -1,11 +1,11 @@
 <div>
 
-  <div *ngIf="err" class="error-message">
+  <div *ngIf="errorMessage" class="error-message">
     <mat-icon class="red-icon" aria-hidden="false" aria-label="Example home icon">warning</mat-icon>
     <h2>Send failed. Network error. Please try it later!</h2>
   </div>
 
-  <div *ngIf="suc" class="success-message">
+  <div *ngIf="successMessage" class="success-message">
     <mat-icon aria-hidden="false" aria-label="Example home icon">check</mat-icon>
     <h2>Your comment added successfully!</h2>
   </div>

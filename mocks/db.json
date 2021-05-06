@@ -22,20 +22,12 @@
       "body": "Vivamus in leo eget ligula sodales molestie. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
-      "body": null,
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius sed magna pretium ornare. Donec imperdiet tincidunt enim a facilisis. Pellentesque habitant morbi tristique ",
       "postId": 3,
       "firstName": "Dávid",
       "lastName": "Tekla",
       "email": "davi@gmail.com",
       "id": 6
-    },
-    {
-      "body": " return this.http.post<User>(UserService.API_URL, user) return this.http.post<User>(UserService.API_URL, user)",
-      "postId": 2,
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "id": 7
     }
   ],
   "contactFormMessages": [
@@ -49,58 +41,16 @@
     {
       "nameField": "Dávid Anna Tekla",
       "emailField": "davi@gmail.com",
-      "messageField": "What is Lorem Ipsum?\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version",
+      "messageField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius sed magna pretium ornare. Donec imperdiet tincidunt enim a facilisis. Pellentesque habitant morbi tristique ",
       "acceptField": true,
       "id": 2
     },
     {
-      "nameField": "grumps",
-      "emailField": "grrrrr@gmail.com",
-      "messageField": "Pocok a kedvencem'''grrrrrumps\nkkjghjghfjhfgdhgdhgdhfdgfdhgdhgdhgdhgdhgdhgdhgdAA<mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card>",
+      "nameField": "Dávid Anna Tekla",
+      "emailField": "davi@gmail.com",
+      "messageField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius sed magna pretium ornare. Donec imperdiet tincidunt enim a facilisis. Pellentesque habitant morbi tristique ",
       "acceptField": true,
       "id": 3
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": " kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n",
-      "acceptField": true,
-      "id": 4
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": ".pipe(\n      retry(1),\n      catchError(this.handleError)\n    );\n  }\n\n  handleError(error: HttpErrorResponse): Observable<string> {\n    let errorMessage = '';\n\n    if(error.error instanceof ProgressEvent) {\n      errorMessage = `Error message: ${error.message}`;\n    } else {\n      errorMessage = `Error message: ${error.message}`;\n    }\n\n    return throwError(errorMessage);",
-      "acceptField": true,
-      "id": 5
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": ".pipe(\n      retry(1),\n      catchError(this.handleError)\n    );\n  }\n\n  handleError(error: HttpErrorResponse): Observable<string> {\n    let errorMessage = '';\n\n    if(error.error instanceof ProgressEvent) {\n      errorMessage = `Error message: ${error.message}`;\n    } else {\n      errorMessage = `Error message: ${error.message}`;\n    }\n\n    return throwError(errorMessage);",
-      "acceptField": true,
-      "id": 6
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-      "acceptField": true,
-      "id": 7
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-      "acceptField": true,
-      "id": 8
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-      "acceptField": true,
-      "id": 9
     }
   ],
   "posts": [

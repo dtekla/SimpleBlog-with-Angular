@@ -2,8 +2,8 @@
   <h2>Add comment<span> - share your thought</span></h2>
   <app-comment-form
     (commentDataToParent)="getCommentDataFromParent($event)"
-    err="{{errorMessage}}"
-    suc="{{successfulSending}}" >
+    errorMessage="{{errorMessage}}"
+    successMessage="{{successfulSending}}">
   </app-comment-form>
 </div>
 

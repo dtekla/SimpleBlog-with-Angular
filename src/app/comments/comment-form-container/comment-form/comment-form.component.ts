@@ -11,10 +11,10 @@ import {AbstractControl, FormBuilder, FormGroup, Validators} from "@angular/form
 export class CommentFormComponent implements OnInit {
 
   @Input()
-  suc
+  successMessage
 
   @Input()
-  err
+  errorMessage
 
   commentForm: FormGroup = this.fb.group({
     firstName: [null,

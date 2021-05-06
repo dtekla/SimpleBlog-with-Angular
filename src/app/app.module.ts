@@ -10,7 +10,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PageComponent } from './page/page.component';
 import {FooterComponent} from "./footer/footer.component";
 import { TermsComponent } from './terms/terms.component';
-import {ContactModule} from "./contact/contact.module";
 import {RouterModule} from "@angular/router";
 import {CommentsModule} from "./comments/comments.module";
 
@@ -31,7 +30,6 @@ import {CommentsModule} from "./comments/comments.module";
         MatCardModule,
         MatButtonModule,
         PostsModule,
-        ContactModule,
         RouterModule,
         CommentsModule
     ],

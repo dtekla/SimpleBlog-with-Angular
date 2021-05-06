@@ -36,7 +36,6 @@ import {PostsRoutingModule} from "./posts-routing.module";
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
-    AppRoutingModule,
     RouterModule,
     PostsRoutingModule
   ],

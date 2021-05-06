@@ -8,9 +8,9 @@ import {PageComponent} from "./page/page.component";
 import {TermsComponent} from "./terms/terms.component";
 
 const routes:Routes = [
-  {path: '', component: PostsComponent},
+  //{path: '', component: PostsComponent},
   //{path: 'post/:id', component: PostDetailComponent, pathMatch: 'full'},
-  {path: 'post/:id', loadChildren: () => import('./posts/post-detail/post-detail.component').then(m => m.PostDetailComponent)},
+  {path: '', loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule)},
   {path: 'contact', loadChildren: () => import ('./contact/contact.module').then(m => m.ContactModule)},
   {path: 'page', component: PageComponent},
   {path: 'terms&conditions', component: TermsComponent},

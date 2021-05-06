@@ -12,6 +12,7 @@ import {FooterComponent} from "./footer/footer.component";
 import { TermsComponent } from './terms/terms.component';
 import {RouterModule} from "@angular/router";
 import {CommentsModule} from "./comments/comments.module";
+import {AppRoutingModule} from "./app-routing.module";
 
 
 @NgModule({
@@ -24,15 +25,16 @@ import {CommentsModule} from "./comments/comments.module";
     TermsComponent
 
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        MatCardModule,
-        MatButtonModule,
-        PostsModule,
-        RouterModule,
-        CommentsModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    AppRoutingModule,
+    RouterModule,
+    CommentsModule,
+    PostsModule
+  ],
   providers: [],
   exports: [
   ],

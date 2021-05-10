@@ -12,6 +12,7 @@ import {RouterModule} from "@angular/router";
 import {PostsService} from "./posts.service";
 import { UcfirstPipe } from './post-detail/ucfirst.pipe';
 import {PostsRoutingModule} from "./posts-routing.module";
+import {PostResolver} from "./post.resolver";
 
 
 
@@ -40,7 +41,8 @@ import {PostsRoutingModule} from "./posts-routing.module";
     PostsRoutingModule
   ],
   providers: [
-    PostsService
+    PostsService,
+    PostResolver
   ]
 })
 export class PostsModule { }

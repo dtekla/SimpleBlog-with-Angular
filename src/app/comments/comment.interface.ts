@@ -1,7 +1,13 @@
+
 export interface Comment {
-  postId: number;
-  id: number;
-  name: string;
+  postId: number | undefined;
+  id?: number;
+  firstName: string;
+  lastName: string;
   email: string;
   body: string;
+}
+
+export interface NewComment extends Comment{
+  acceptedTerms: boolean;
 }

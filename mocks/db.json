@@ -3,31 +3,66 @@
     {
       "postId": 2,
       "id": 3,
-      "name": "Kris Key",
+      "firstName": "Kris",
+      "lastname": "Key",
       "email": "reo@gmail.com",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in leo eget ligula sodales molestie. Integer mattis ipsum sit amet tellus fringilla dictum. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
       "postId": 2,
       "id": 4,
-      "name": "Johnny Key",
+      "firstName": "Johnny",
+      "lastName": "Key",
       "email": "zbi@gmail.com",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
       "postId": 2,
       "id": 5,
-      "name": "Tulo James",
+      "firstName": "Tulo",
+      "lastName": "James",
       "email": "tulo@gmail.com",
       "body": "Vivamus in leo eget ligula sodales molestie. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius sed magna pretium ornare. Donec imperdiet tincidunt enim a facilisis. Pellentesque habitant morbi tristique ",
-      "postId": 3,
       "firstName": "Dávid",
       "lastName": "Tekla",
       "email": "davi@gmail.com",
+      "body": "hello lorem hello lorem hello lorem hello lorem",
+      "postId": "2",
       "id": 6
+    },
+    {
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "body": "hello loremhello loremhello loremhello loremhello lorem",
+      "postId": "2",
+      "id": 7
+    },
+    {
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "body": "Vhello loremhello loremhello lorem",
+      "postId": "2",
+      "id": 8
+    },
+    {
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "body": "hello loremhello loremhello loremhello lorem",
+      "postId": "2",
+      "id": 9
+    },
+    {
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "davi@gmail.com",
+      "body": "hello loremhello loremhello lorem",
+      "postId": "2",
+      "id": 10
     }
   ],
   "contactFormMessages": [

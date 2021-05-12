@@ -12,5 +12,5 @@
   </div>
 </div>
 
-<app-comment-form-container></app-comment-form-container>
+<app-comment-form-container [postId]="postId" (response)="setNewComment($event)"></app-comment-form-container>
 

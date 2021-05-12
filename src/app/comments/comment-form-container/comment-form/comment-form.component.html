@@ -1,11 +1,11 @@
 <div>
 
-  <div *ngIf="errorMessage" class="error-message">
+  <div *ngIf="errorMessage" class="sendingError-message">
     <mat-icon class="red-icon" aria-hidden="false" aria-label="Example home icon">warning</mat-icon>
     <h2>Send failed. Network error. Please try it later!</h2>
   </div>
 
-  <div *ngIf="successMessage" class="success-message">
+  <div *ngIf="isSendSuccessful" class="sendingSuccess-message">
     <mat-icon aria-hidden="false" aria-label="Example home icon">check</mat-icon>
     <h2>Your comment added successfully!</h2>
   </div>
@@ -19,7 +19,7 @@
            id="firstName"
            placeholder="Your name here">
 
-    <div class="error-firstName" *ngIf="firstName?.touched">
+    <div class=" error error-firstName" *ngIf="firstName?.touched">
       <p *ngIf="firstName?.errors?.required">
         Please fill your name.
       </p>
@@ -36,7 +36,7 @@
            id="lastName"
            placeholder="Your last name here">
 
-    <div class="error-lastName" *ngIf="lastName?.touched">
+    <div class="error error-lastName" *ngIf="lastName?.touched">
       <p *ngIf="lastName?.errors?.required">
         Please fill your name.
       </p>
@@ -53,7 +53,7 @@
            formControlName="email"
            placeholder="your@email.com">
 
-    <div class="error-email" *ngIf="email?.touched">
+    <div class="error error-email" *ngIf="email?.touched">
       <p *ngIf="email?.errors?.required">
         Please fill your email address!
       </p>
@@ -63,13 +63,13 @@
       </p>
     </div>
 
-    <label id="body_label" for="body">Comment</label>
-    <textarea id="body"
+    <label id="comment-body_label" for="comment-body">Comment</label>
+    <textarea id="comment-body"
               formControlName="body"
               placeholder="...your message goes here.">
     </textarea>
 
-    <div class="error-comment" *ngIf="body?.touched">
+    <div class="error error-comment" *ngIf="body?.touched">
       <p *ngIf="body?.errors?.required">
         Please fill the comment section!
       </p>
@@ -80,16 +80,16 @@
     </div>
 
     <div class="checkbox_container">
-      <input type="checkbox" id="acceptField" formControlName="terms">
-      <label id="acceptField_label" for="acceptField">I red and accept the <a routerLink="/terms&conditions">Terms &
+      <input type="checkbox" id="comment-acceptField" formControlName="terms" >
+      <label id="comment-acceptField_label" for="comment-acceptField">I red and accept the <a routerLink="/terms&conditions">Terms &
         Conditions</a></label>
     </div>
 
-    <p class="error-terms" *ngIf="terms?.errors?.required && terms?.touched">
+    <p class="error error-terms" *ngIf="terms?.errors?.required && terms?.touched">
       Please accept Terms & Conditions!
     </p>
 
-    <button mat-raised-button color="primary" id="send_button" type="submit" [disabled]="commentForm.invalid">Send!
+    <button mat-raised-button color="primary" id="comment-button" type="submit" [disabled]="commentForm.invalid">Send!
     </button>
   </form>
 

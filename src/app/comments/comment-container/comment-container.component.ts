@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {Comment} from "../comment.interface";
+import {Component, Input, OnInit} from '@angular/core';
+import {Comment, NewComment} from "../comment.interface";
 import {CommentService} from "../comment.service";
 import {ActivatedRoute, Params} from "@angular/router";
 import {switchMap, tap} from "rxjs/operators";
@@ -15,12 +15,16 @@ export class CommentContainerComponent implements OnInit {
   comments: Comment[];
   errorMessage: string = '';
   params: Params | undefined;
-  postId: number;
+  @Input() postId: number;
 
 
   constructor(
     private route: ActivatedRoute,
     private commentService: CommentService) {
+  }
+
+  setNewComment(newComment: NewComment): void {
+    this.comments = [newComment, ...this.comments];
   }
 
   ngOnInit(): void {

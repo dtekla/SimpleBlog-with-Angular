@@ -49,7 +49,6 @@ export class CommentFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
   onSubmit() {
     this.comment.emit(this.commentForm.value)
     this.commentForm.reset();

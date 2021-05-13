@@ -30,7 +30,7 @@ export class CommentFormContainerComponent implements OnInit {
       email: data.email,
       body: data.body,
       postId: this.postId,
-      acceptedTerms: data.acceptedTerms
+      terms: data.terms
     };
 
 

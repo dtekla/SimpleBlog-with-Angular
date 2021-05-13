@@ -27,42 +27,11 @@
     {
       "firstName": "Dávid",
       "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "body": "hello lorem hello lorem hello lorem hello lorem",
-      "postId": "2",
+      "email": "david@gmail.com",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non neque at nunc eleifend gravida. Fusce aliquet turpis vel enim tempus, at pulvinar diam scelerisque. Sed arcu neque, porttitor vitae lacinia non, porta ornare neque. Sed sit amet convallis justo. Vivamus egestas odio sit amet massa euismod hendrerit.",
+      "postId": "1",
+      "terms": true,
       "id": 6
-    },
-    {
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "body": "hello loremhello loremhello loremhello loremhello lorem",
-      "postId": "2",
-      "id": 7
-    },
-    {
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "body": "Vhello loremhello loremhello lorem",
-      "postId": "2",
-      "id": 8
-    },
-    {
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "body": "hello loremhello loremhello loremhello lorem",
-      "postId": "2",
-      "id": 9
-    },
-    {
-      "firstName": "Dávid",
-      "lastName": "Tekla",
-      "email": "davi@gmail.com",
-      "body": "hello loremhello loremhello lorem",
-      "postId": "2",
-      "id": 10
     }
   ],
   "contactFormMessages": [

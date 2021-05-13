@@ -9,5 +9,5 @@ export interface Comment {
 }
 
 export interface NewComment extends Comment{
-  acceptedTerms: boolean;
+  terms: string;
 }

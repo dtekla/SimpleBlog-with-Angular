@@ -48,13 +48,6 @@
       "messageField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius sed magna pretium ornare. Donec imperdiet tincidunt enim a facilisis. Pellentesque habitant morbi tristique ",
       "acceptField": true,
       "id": 2
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius sed magna pretium ornare. Donec imperdiet tincidunt enim a facilisis. Pellentesque habitant morbi tristique ",
-      "acceptField": true,
-      "id": 3
     }
   ],
   "posts": [

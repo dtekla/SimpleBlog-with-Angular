@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Comment} from "../comment.interface";
+import {Comment, NewComment} from "../comment.interface";
 import {CommentService} from "../comment.service";
 
 
@@ -12,10 +12,17 @@ export class CommentContainerComponent implements OnInit {
 
   comments: Comment[];
   errorMessage: string = '';
+
+  params: Params | undefined;
   @Input() postId: number;
+
 
   constructor(
     private commentService: CommentService) {
+  }
+
+  setNewComment(newComment: NewComment): void {
+    this.comments = [newComment, ...this.comments];
   }
 
   ngOnInit(): void {

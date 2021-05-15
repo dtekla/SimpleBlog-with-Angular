@@ -1,0 +1,9 @@
+<div class="comment-form">
+  <h2>Add comment<span> - share your thought</span></h2>
+  <app-comment-form
+    (comment)="newComment($event)"
+    errorMessage="{{errorMessage}}"
+    isSendSuccessful="{{isSendSuccessful}}">
+  </app-comment-form>
+</div>
+

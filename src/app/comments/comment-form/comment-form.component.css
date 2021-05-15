@@ -1,0 +1,151 @@
+.comment-form{
+  margin: auto 0;
+  display: grid;
+  grid-template-columns: [line1] 30% [line2] 30% [line3] 40%;
+  grid-template-rows:  repeat(2, 1fr) 0.2fr repeat(2, 1fr) 0.2fr 1fr 0.2fr 2fr;
+  column-gap: 5px;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#firstName_label {
+  grid-column: 1;
+  grid-row: 1 ;
+  align-self: end;
+}
+#firstName {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#lastName_label {
+  grid-column: 2;
+  grid-row: 1 ;
+  align-self: end;
+}
+#lastName {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+
+#email_label {
+  grid-column: 3;
+  grid-row: 1 ;
+  align-self: end;
+}
+#email {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#comment-body_label {
+  grid-column: 1;
+  grid-row: 4;
+  align-self: end;
+}
+#comment-body {
+  grid-column: 1 / span 3;
+  grid-row: 5;
+}
+
+.checkbox_container{
+  grid-column: 1 / span 2;
+  grid-row: 7;
+  align-self: end;
+}
+
+#comment-acceptField{
+  margin: 0 5px;
+}
+
+#comment-button{
+  grid-column: 1;
+  grid-row: 9;
+  width: 70%;
+  height: 40px;
+  align-self: end;
+}
+
+.sendingSuccess-message {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  background: #E8F3DC;
+  color: #90C555;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sendingSuccess-message h2 {
+  font-size: 16px;
+  margin: 0;
+  padding: 10px;
+}
+
+.error-message{
+  width: 90%;
+  height: 50px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  background: #ffd6e0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.red-icon{
+  color:#ff4977 ;
+}
+
+.error-message mat-icon{
+  display: inline-block;
+}
+
+.error-message h2 {
+  font-size: 16px;
+  padding: 10px;
+  color: #ff4977;
+  margin: 0;
+}
+
+.error {
+  font-size: 10px;
+  color: #ff4977;
+}
+
+.error-firstName{
+  grid-column: 1;
+  grid-row: 3;
+  margin-left: 5px;
+}
+
+
+.error-lastName{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.error-email{
+   grid-column: 3;
+   grid-row: 3;
+ }
+
+.error-comment{
+  grid-column: 1 / 2 span;
+  grid-row: 6;
+  margin-left: 5px;
+}
+
+.error-terms{
+  grid-column: 1 / 2 span;
+  grid-row: 8;
+  margin-left: 5px;
+}
+

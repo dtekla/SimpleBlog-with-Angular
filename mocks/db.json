@@ -3,23 +3,35 @@
     {
       "postId": 2,
       "id": 3,
-      "name": "Kris Key",
+      "firstName": "Kris",
+      "lastname": "Key",
       "email": "reo@gmail.com",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in leo eget ligula sodales molestie. Integer mattis ipsum sit amet tellus fringilla dictum. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
       "postId": 2,
       "id": 4,
-      "name": "Johnny Key",
+      "firstName": "Johnny",
+      "lastName": "Key",
       "email": "zbi@gmail.com",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
       "postId": 2,
       "id": 5,
-      "name": "Tulo James",
+      "firstName": "Tulo",
+      "lastName": "James",
       "email": "tulo@gmail.com",
       "body": "Vivamus in leo eget ligula sodales molestie. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
+    },
+    {
+      "firstName": "Dávid",
+      "lastName": "Tekla",
+      "email": "david@gmail.com",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non neque at nunc eleifend gravida. Fusce aliquet turpis vel enim tempus, at pulvinar diam scelerisque. Sed arcu neque, porttitor vitae lacinia non, porta ornare neque. Sed sit amet convallis justo. Vivamus egestas odio sit amet massa euismod hendrerit.",
+      "postId": "1",
+      "terms": true,
+      "id": 6
     }
   ],
   "contactFormMessages": [
@@ -33,10 +45,10 @@
     {
       "nameField": "Dávid Anna Tekla",
       "emailField": "davi@gmail.com",
-      "messageField": "What is Lorem Ipsum?\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version",
+      "messageField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius sed magna pretium ornare. Donec imperdiet tincidunt enim a facilisis. Pellentesque habitant morbi tristique ",
       "acceptField": true,
       "id": 2
-    },
+    }
   ],
   "posts": [
     {

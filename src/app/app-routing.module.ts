@@ -14,7 +14,7 @@ const routes:Routes = [
   //{path: '', loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule)},
   {path: 'contact', loadChildren: () => import ('./contact/contact.module').then(m => m.ContactModule)},
   {path: 'page', component: PageComponent},
-  {path: 'terms&conditions', component: TermsComponent},
+  {path: 'terms-conditions', component: TermsComponent},
   {path: '404', component: NotFoundComponent},
   {path: '**', redirectTo: '404'}
 ];
@@ -23,7 +23,7 @@ const routes:Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'}),
+    RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled', enableTracing: true}),
   ],
   exports: [
     RouterModule

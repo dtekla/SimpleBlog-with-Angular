@@ -33,10 +33,10 @@ import {CommonModule} from "@angular/common";
     CommonModule,
     MatCardModule,
     MatButtonModule,
+    PostsModule,
     AppRoutingModule,
     RouterModule,
-    CommentsModule,
-    PostsModule
+    CommentsModule
   ],
   providers: [],
   exports: [

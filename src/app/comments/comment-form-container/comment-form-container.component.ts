@@ -1,8 +1,9 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {CommentService} from "../comment.service";
-import {NewComment} from "../comment.interface";
+import {NewComment, Comment} from "../comment.interface";
 import {switchMap} from "rxjs/operators";
+
 
 
 @Component({
@@ -24,13 +25,12 @@ export class CommentFormContainerComponent implements OnInit {
   }
 
   newComment(data: NewComment){
-    let comment: NewComment = {
+    let comment: Comment = {
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
       body: data.body,
       postId: this.postId,
-      terms: data.terms
     };
 
 

@@ -21,7 +21,7 @@ export class CommentService {
     })
   }
 
-  addComment(comment: NewComment, id: number): Observable<string | NewComment> {
+  addComment(comment: Comment, id: number): Observable<string | NewComment> {
     return this.http.post<NewComment>(CommentService.API_URL, comment);
   }
 

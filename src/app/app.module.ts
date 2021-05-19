@@ -13,7 +13,6 @@ import { TermsComponent } from './terms/terms.component';
 import {RouterModule} from "@angular/router";
 import {CommentsModule} from "./comments/comments.module";
 import {AppRoutingModule} from "./app-routing.module";
-import {PostResolver} from "./posts/post.resolver";
 import {CommonModule} from "@angular/common";
 
 

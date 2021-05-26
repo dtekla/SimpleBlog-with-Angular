@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {PostsService} from "../posts.service";
 import { Post } from "../post.interface";
+import {ActivatedRoute} from "@angular/router";
 
 
 @Component({
@@ -16,18 +16,9 @@ export class PostsComponent implements OnInit {
   errorMessage = '';
 
 
-  constructor(private postService: PostsService) { }
+  constructor(private router: ActivatedRoute) { }
 
   ngOnInit(): void {
-     this.postService.getPosts().subscribe(
-      post => {this.posts = post;
-      },
-       error => {
-          this.errorMessage = error;
-       }
-    );
+      this.posts = this.router.snapshot.data.posts
   }
-
-
-
 }

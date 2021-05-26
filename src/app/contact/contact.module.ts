@@ -4,22 +4,19 @@ import {ContactComponent} from "./contact.component";
 import {FormsModule} from "@angular/forms";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
-import {RouterModule} from "@angular/router";
-import {MatIconModule} from "@angular/material/icon";
-
+import {ContactRoutingModule} from "./contact-routing.module";
 
 
 @NgModule({
   declarations: [
    ContactComponent
   ],
-    imports: [
-        CommonModule,
-        FormsModule,
-        MatCardModule,
-        MatButtonModule,
-        RouterModule,
-        MatIconModule
-    ]
+  imports: [
+    CommonModule,
+    FormsModule,
+    MatCardModule,
+    MatButtonModule,
+    ContactRoutingModule
+  ]
 })
 export class ContactModule { }

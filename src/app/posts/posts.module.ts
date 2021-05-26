@@ -11,7 +11,8 @@ import {HeaderComponent} from "../header/header.component";
 import {RouterModule} from "@angular/router";
 import {PostsService} from "./posts.service";
 import { UcfirstPipe } from './post-detail/ucfirst.pipe';
-
+import {PostRoutingModule} from "./post-routing.module";
+import {PostResolver} from "./post.resolver";
 
 
 
@@ -22,7 +23,6 @@ import { UcfirstPipe } from './post-detail/ucfirst.pipe';
     PostItemComponent,
     HeaderComponent,
     UcfirstPipe,
-
   ],
   exports: [
     TruncatePipe,
@@ -35,11 +35,12 @@ import { UcfirstPipe } from './post-detail/ucfirst.pipe';
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
-    AppRoutingModule,
     RouterModule,
+    PostRoutingModule
   ],
   providers: [
-    PostsService
+    PostsService,
+    PostResolver
   ]
 })
 export class PostsModule { }

@@ -10,9 +10,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PageComponent } from './page/page.component';
 import {FooterComponent} from "./footer/footer.component";
 import { TermsComponent } from './terms/terms.component';
-import {ContactModule} from "./contact/contact.module";
 import {RouterModule} from "@angular/router";
 import {CommentsModule} from "./comments/comments.module";
+import {AppRoutingModule} from "./app-routing.module";
+import {CommonModule} from "@angular/common";
 
 
 
@@ -26,16 +27,17 @@ import {CommentsModule} from "./comments/comments.module";
     TermsComponent
 
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        MatCardModule,
-        MatButtonModule,
-        PostsModule,
-        ContactModule,
-        RouterModule,
-        CommentsModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    CommonModule,
+    MatCardModule,
+    MatButtonModule,
+    PostsModule,
+    AppRoutingModule,
+    RouterModule,
+    CommentsModule
+  ],
   providers: [],
   exports: [
   ],

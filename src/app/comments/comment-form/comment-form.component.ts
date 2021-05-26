@@ -11,28 +11,33 @@ import {AbstractControl, FormBuilder, FormGroup, Validators} from "@angular/form
 export class CommentFormComponent implements OnInit {
 
   @Input()
-  suc
+  isSendSuccessful
 
   @Input()
-  err
+  errorMessage
+
+  @Output() comment = new EventEmitter();
+
+  MIN_INPUT_LENGTH = 5;
+  MAX_INPUT_LENGTH = 30;
 
   commentForm: FormGroup = this.fb.group({
     firstName: [null,
         [
           Validators.required,
-          Validators.minLength(5),
+          Validators.minLength(this.MIN_INPUT_LENGTH),
         ]],
     lastName: [
         null,
         [
           Validators.required,
-          Validators.minLength(5),
+          Validators.minLength(this.MIN_INPUT_LENGTH),
         ]],
     email: [null, Validators.required],
     body: [null,
       [
       Validators.required,
-      Validators.minLength(30)
+      Validators.minLength(this.MAX_INPUT_LENGTH)
       ]],
     terms: [false, Validators.requiredTrue]
   })
@@ -40,13 +45,12 @@ export class CommentFormComponent implements OnInit {
 
   constructor(private fb: FormBuilder) { }
 
-  @Output() commentDataToParent = new EventEmitter();
 
   ngOnInit(): void {
   }
 
   onSubmit() {
-    this.commentDataToParent.emit(this.commentForm.value)
+    this.comment.emit(this.commentForm.value)
     this.commentForm.reset();
   }
 
@@ -70,5 +74,6 @@ export class CommentFormComponent implements OnInit {
   get body(): AbstractControl | null {
     return this.commentForm.get('body');
   }
+
 
 }

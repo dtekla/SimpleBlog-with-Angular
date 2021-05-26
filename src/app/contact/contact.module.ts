@@ -7,7 +7,6 @@ import {MatButtonModule} from "@angular/material/button";
 import {ContactRoutingModule} from "./contact-routing.module";
 
 
-
 @NgModule({
   declarations: [
    ContactComponent

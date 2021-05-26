@@ -43,12 +43,12 @@ input, textarea {
   grid-row: 2;
 }
 
-#body_label {
+#comment-body_label {
   grid-column: 1;
   grid-row: 4;
   align-self: end;
 }
-#body {
+#comment-body {
   grid-column: 1 / span 3;
   grid-row: 5;
 }
@@ -59,11 +59,11 @@ input, textarea {
   align-self: end;
 }
 
-#acceptField{
+#comment-acceptField{
   margin: 0 5px;
 }
 
-#send_button{
+#comment-button{
   grid-column: 1;
   grid-row: 9;
   width: 70%;
@@ -71,7 +71,7 @@ input, textarea {
   align-self: end;
 }
 
-.success-message {
+.sendingSuccess-message {
   width: 90%;
   height: 50px;
   margin: 0 auto 30px;
@@ -83,7 +83,7 @@ input, textarea {
   align-items: center;
 }
 
-.success-message h2 {
+.sendingSuccess-message h2 {
   font-size: 16px;
   margin: 0;
   padding: 10px;
@@ -115,9 +115,12 @@ input, textarea {
   margin: 0;
 }
 
-.error-firstName{
+.error {
   font-size: 10px;
   color: #ff4977;
+}
+
+.error-firstName{
   grid-column: 1;
   grid-row: 3;
   margin-left: 5px;
@@ -125,30 +128,22 @@ input, textarea {
 
 
 .error-lastName{
-  font-size: 10px;
-  color: #ff4977;
   grid-column: 2;
   grid-row: 3;
 }
 
 .error-email{
-   font-size: 10px;
-   color: #ff4977;
    grid-column: 3;
    grid-row: 3;
  }
 
 .error-comment{
-  font-size: 10px;
-  color: #ff4977;
   grid-column: 1 / 2 span;
   grid-row: 6;
   margin-left: 5px;
 }
 
 .error-terms{
-  font-size: 10px;
-  color: #ff4977;
   grid-column: 1 / 2 span;
   grid-row: 8;
   margin-left: 5px;

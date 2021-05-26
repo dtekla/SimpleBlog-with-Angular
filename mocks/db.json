@@ -3,30 +3,34 @@
     {
       "postId": 2,
       "id": 3,
-      "name": "Kris Key",
+      "firstName": "Kris",
+      "lastname": "Key",
       "email": "reo@gmail.com",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in leo eget ligula sodales molestie. Integer mattis ipsum sit amet tellus fringilla dictum. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
       "postId": 2,
       "id": 4,
-      "name": "Johnny Key",
+      "firstName": "Johnny",
+      "lastName": "Key",
       "email": "zbi@gmail.com",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
       "postId": 2,
       "id": 5,
-      "name": "Tulo James",
+      "firstName": "Tulo",
+      "lastName": "James",
       "email": "tulo@gmail.com",
       "body": "Vivamus in leo eget ligula sodales molestie. Aenean at urna tristique, dictum nisl ut, consectetur justo. Phasellus ultrices, velit et cursus laoreet, erat elit pharetra est, id mattis eros ex auctor ligula. "
     },
     {
-      "body": null,
-      "postId": 3,
       "firstName": "Dávid",
       "lastName": "Tekla",
-      "email": "davi@gmail.com",
+      "email": "david@gmail.com",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non neque at nunc eleifend gravida. Fusce aliquet turpis vel enim tempus, at pulvinar diam scelerisque. Sed arcu neque, porttitor vitae lacinia non, porta ornare neque. Sed sit amet convallis justo. Vivamus egestas odio sit amet massa euismod hendrerit.",
+      "postId": "1",
+      "terms": true,
       "id": 6
     },
     {
@@ -57,58 +61,9 @@
     {
       "nameField": "Dávid Anna Tekla",
       "emailField": "davi@gmail.com",
-      "messageField": "What is Lorem Ipsum?\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including version",
+      "messageField": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius sed magna pretium ornare. Donec imperdiet tincidunt enim a facilisis. Pellentesque habitant morbi tristique ",
       "acceptField": true,
       "id": 2
-    },
-    {
-      "nameField": "grumps",
-      "emailField": "grrrrr@gmail.com",
-      "messageField": "Pocok a kedvencem'''grrrrrumps\nkkjghjghfjhfgdhgdhgdhfdgfdhgdhgdhgdhgdhgdhgdhgdAA<mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card><mat-card class=\"noPosts-text\" *ngIf=\"posts.length === 0 && errorMessage === ''\">\n  <p><span>Oops!</span> No posts yet :(</p>\n</mat-card>",
-      "acceptField": true,
-      "id": 3
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": " kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n kapcsolati ürlapnakakkor van értelme, ha működik is és teszi a neki kitűzött célját, és eljutattja az üzenetet a címzettnek :) Az üzenetet mi most az adatbásiban szeretnénk elmenteni, hogy az üzenet mentésre kerljön.\n\n",
-      "acceptField": true,
-      "id": 4
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": ".pipe(\n      retry(1),\n      catchError(this.handleError)\n    );\n  }\n\n  handleError(error: HttpErrorResponse): Observable<string> {\n    let errorMessage = '';\n\n    if(error.error instanceof ProgressEvent) {\n      errorMessage = `Error message: ${error.message}`;\n    } else {\n      errorMessage = `Error message: ${error.message}`;\n    }\n\n    return throwError(errorMessage);",
-      "acceptField": true,
-      "id": 5
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": ".pipe(\n      retry(1),\n      catchError(this.handleError)\n    );\n  }\n\n  handleError(error: HttpErrorResponse): Observable<string> {\n    let errorMessage = '';\n\n    if(error.error instanceof ProgressEvent) {\n      errorMessage = `Error message: ${error.message}`;\n    } else {\n      errorMessage = `Error message: ${error.message}`;\n    }\n\n    return throwError(errorMessage);",
-      "acceptField": true,
-      "id": 6
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-      "acceptField": true,
-      "id": 7
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-      "acceptField": true,
-      "id": 8
-    },
-    {
-      "nameField": "Dávid Anna Tekla",
-      "emailField": "davi@gmail.com",
-      "messageField": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-      "acceptField": true,
-      "id": 9
     }
   ],
   "posts": [
